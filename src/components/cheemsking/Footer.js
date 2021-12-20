@@ -1,12 +1,9 @@
 import * as React from 'react';
-import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
-import { Grid, List, ListItem, ListItemAvatar, ListItemText, Avatar } from '@material-ui/core';
-import Icon from "./Icon";
+import { makeStyles } from "@material-ui/core/styles";
+import { Grid } from '@material-ui/core';
 import IconFooter from "./IconFooter";
-import name from "../../assets/name.png"
-import minicheems from "../../assets/minicheems.png"
 import logo from "../../assets/Asset1.svg"
-import { FaFacebookF, FaInstagram, FaTwitter, FaTelegram } from "react-icons/fa";
+import { FaInstagram, FaTelegram } from "react-icons/fa";
 import { FcComboChart } from "react-icons/fc";
 
 const FacebookBackground = "linear-gradient(to right, #0546A0 0%, #0546A0 40%, #663FB6 100%)";
@@ -38,7 +35,7 @@ export default function Footer() {
 
     return (
         <Grid container alignItems="center" justifyContent="space-between">
-            <Grid item xs={3}><img src={logo} style={{height: '315px'}} alt=""/></Grid>
+            <Grid item xs={3}><img className="swirl-in-fwd" src={logo} style={{height: '315px'}} alt=""/></Grid>
             <Grid container item xs={3} justifyContent="center">
                 <IconFooter color={FacebookBackground} style={{height: '55px', width: '55px'}} className={classes.icon}>
                     <FaTelegram />

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Grid, List, ListItem, ListItemAvatar, ListItemText, Avatar } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
