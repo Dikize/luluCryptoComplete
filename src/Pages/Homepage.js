@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import Icon from "../components/cheemsking/Icon";
-import { FaFacebookF, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaTelegram, FaTwitter } from "react-icons/fa";
 import './Cheemsking.css'
 import name from "../assets/name.png"
 import minicheems from "../assets/minicheems.png"
@@ -37,8 +37,6 @@ export default function HomePage() {
     const classes = useStyles();
 
     const TelegramBackground = "#16BFFD";
-    const FacebookBackground = "linear-gradient(to right, #0546A0 0%, #0546A0 40%, #663FB6 100%)";
-    const InstagramBackground = "linear-gradient(to right, #A12AC4 0%, #ED586C 40%, #F0A853 100%)";
     const TwitterBackground = "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
 
     return (

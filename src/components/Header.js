@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
-import { AppBar, Button, MenuItem, Select, Menu, Toolbar, Typography, Box, IconButton } from "@material-ui/core";
+import { AppBar, Button, MenuItem, Menu, Toolbar, Typography, Box, IconButton } from "@material-ui/core";
 import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
 // import  MenuIcon  from "@material-ui/icons/Menu";
 import MenuIcon from '@material-ui/icons/Menu'
-import { CryptoState } from "../CryptoContext";
 import { Link } from 'react-router-dom';
 import logo from '../assets/name.png'
 
