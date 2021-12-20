@@ -41,7 +41,7 @@ const darkTheme = createTheme({
 const pages = [
   {
     name: 'Tokenomics',
-    link: 'https://github.com/'
+    link: '#Tokenomics'
 
   }, 
   {
@@ -51,12 +51,16 @@ const pages = [
   {
     name: 'Telegram',
     link: 'https://t.me/#'
-  }];
+  },
+  {
+    name: 'Crypto info',
+    link: 'https://rimkchasseur.netlify.app/pageGetCoins',
+  }
+];
 
 function Header() {
   const classes = useStyles();
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const { currency, setCurrency } = CryptoState();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -134,17 +138,14 @@ function Header() {
                 <a className={classes.link} href={page.link}>{page.name}</a>
               </Button>
             ))}
-            <Select
-              variant="outlined"
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={currency}
-              style={{ width: 100, height: 40, marginLeft: 15 }}
-              onChange={(e) => setCurrency(e.target.value)}
-            >
-              <MenuItem value={"USD"}>USD</MenuItem>
-              <MenuItem value={"INR"}>INR</MenuItem>
-            </Select>
+              <Button
+                conponent={Link}
+                to='/pageGetCoins'
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Crypto info
+              </Button>
           </Box>
         </Toolbar>
       </AppBar>

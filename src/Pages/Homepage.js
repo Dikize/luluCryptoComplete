@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import Icon from "../components/cheemsking/Icon";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 import './Cheemsking.css'
 import name from "../assets/name.png"
 import minicheems from "../assets/minicheems.png"
@@ -36,6 +36,7 @@ const cheemskingTheme = createTheme({
 export default function HomePage() {
     const classes = useStyles();
 
+    const TelegramBackground = "#16BFFD";
     const FacebookBackground = "linear-gradient(to right, #0546A0 0%, #0546A0 40%, #663FB6 100%)";
     const InstagramBackground = "linear-gradient(to right, #A12AC4 0%, #ED586C 40%, #F0A853 100%)";
     const TwitterBackground = "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
@@ -45,38 +46,37 @@ export default function HomePage() {
             <Grid container className='container-cheemsking'>
                 <Grid item xs={12}>
                     <h1 className="text-center mt-5">
-                        <img src={name} alt="" className="rotate-scale-down"/>
+                        <img src={name} alt="" className="bounce-in-fwd"/>
                     </h1>
                 </Grid>
                 <Grid container className="my-5" alignItems="center">
                     <Grid item xs={6}>
                         <div className="card mx-auto">
                             <div className="h1">Hello sir...</div>
-                            <p>
+                            <p className="px-2">
                             I may be hard to see because of my size but don't let that fool you! I am Cheems King and I pack a punch!! Watch me moon a chart like my older siblings! Don't be late and fomo in on my giant project, now mooning on Binance Smart Chain! And stop by the telegram to say hello!
                             </p>
                             <HorizontalRule />
                             <IconsContainer className={classes.iconContainer}>
-                                <Icon color={FacebookBackground}>
-                                <FaFacebookF />
-                                </Icon>
-                                <Icon color={InstagramBackground}>
-                                <FaInstagram />
+                                <Icon color={TelegramBackground}>
+                                    <a className="text-white" href="https://t.me/#"><FaTelegram /></a>
                                 </Icon>
                                 <Icon color={TwitterBackground}>
-                                <FaTwitter />
+                                    <a className="text-white" href="https://twitter.com/Cheems_King">
+                                        <FaTwitter />
+                                    </a>
                                 </Icon>
                             </IconsContainer>
                         </div>
                     </Grid>
                     <Grid item xs={6}>
                         <h1 className="text-center">
-                            <img src={minicheems} className="flip-scale-up-diag-1" style={{height: '568px'}} alt=""/>
+                            <img src={minicheems} className="rotate-in-diag-1" style={{height: '568px'}} alt=""/>
                         </h1>
                     </Grid>
                 </Grid>
 
-                <Grid container className="mb-5" alignItems="center">
+                <Grid container id="Tokenomics" className="mb-5" alignItems="center">
                     <Grid item xs={6}>
                         <h1 className="text-center">
                             <img className="swirl-in-fwd" src={logo} style={{height: '568px'}} alt=""/>

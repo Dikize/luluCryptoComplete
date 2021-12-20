@@ -35,7 +35,6 @@ export default function DataTable() {
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem >
                         <h4>BUY TAX: 15%</h4>
-                        {/* <ListItemText primary="BUY TAX: 15%"/> */}
                     </ListItem>
                     <Grid item xs={12}>
                         <ListItem >
