@@ -106,18 +106,18 @@ export default function HomePage() {
                         </Grid>
                     </Grid>
                 </div>
-                <div className="parallax">
+                <Grid item xs={12} className={styles.parallax}>
                     <p>
                         <img src={name} alt="" style={{width: '80%', height: '120px', transform: 'translateY(-28%)'}} className=""/>
                     </p>
                     <span>A quality team that ensures the expansion of your wallet</span>
-                </div>
+                </Grid>
                 <div className={styles.containerSecondContainer}>
 
                     <Grid container id="Tokenomics" className={classes.Tokenomics} alignItems="center">
                         <Grid item xs={12} md={6}>
                             <h1 className="text-center w-100">
-                                <img className="scale-in-hor-center w-100" src={logo} style={{height: '568px'}} alt=""/>
+                                <img className={styles.scaleinhorcenter} src={logo} style={{height: '568px'}} alt=""/>
                             </h1>
                         </Grid>
 
