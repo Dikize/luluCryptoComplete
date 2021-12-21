@@ -55,7 +55,7 @@
 
 
 /* ################################### */
-.rotate-scale-up {
+.rotatescaleup {
     -webkit-animation: rotate-scale-up 0.65s linear both;
     animation: rotate-scale-up 0.65s linear both;
 }
@@ -99,7 +99,7 @@
 
 /* #################################### */
 
-.rotate-scale-down {
+.rotatescaledown {
     -webkit-animation: rotate-scale-down 8.65s linear infinite both;
     animation: rotate-scale-down 8.65s linear infinite both;
 }
@@ -141,7 +141,7 @@
 
 
 /* #################################### */
-.slide-top {
+.slidetop {
     -webkit-animation: slide-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
     animation: slide-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
 }
@@ -209,7 +209,7 @@
 
 
 /* ################################################################# */
-.bounce-in-fwd {
+.bounceinfwd {
     -webkit-animation: bounce-in-fwd 3.1s infinite alternate both;
     animation: bounce-in-fwd 3.1s infinite alternate both;
 }
