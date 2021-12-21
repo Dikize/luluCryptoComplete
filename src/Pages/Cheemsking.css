@@ -41,6 +41,26 @@
     transform: translateY(-20px);
 }
 
+@media (max-width: 600px) {
+    .card-table {
+        width: 80%!important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################### */
 .rotate-scale-up {
     -webkit-animation: rotate-scale-up 0.65s linear both;
     animation: rotate-scale-up 0.65s linear both;

@@ -3,6 +3,38 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, List, ListItem, ListItemAvatar, ListItemText, Avatar } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
+    cardTable: {
+        margin: '0 auto',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        background: 'rgba(255, 255, 255, 0.15)',
+        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        backdropFilter: 'blur(8.5px)',
+        borderRadius: '10px',
+        color: '#ffffff',
+        textTransform: 'uppercase',
+        letterSpacing: '0.4rem',
+        width: '50%',
+        transition: 'all 1s',
+        '&:hover': {
+            transform: 'translateY(-20px)'
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '100%'
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: '80%'
+        },
+    },
+    cardTableItemContainer: {
+        [theme.breakpoints.down('xs')]: {
+            width: '100%'
+        },
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center'
+        },
+    },
     listItemText: {
         textAlign: "center",
 
@@ -30,8 +62,8 @@ export default function DataTable() {
     const classes = useStyles();
 
     return (
-        <Grid container className="card-table mx-auto">
-            <Grid container item xs={6}>
+        <Grid container className={classes.cardTable}>
+            <Grid container item xs={12} md={6} className={classes.cardTableItemContainer}>
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem >
                         <h4>BUY TAX: 15%</h4>
@@ -73,7 +105,7 @@ export default function DataTable() {
                 </List>    
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid container item xs={12} md={6} className={classes.cardTableItemContainer}>
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem >
                         <ListItemText className={classes.listItemText} primary="SELL TAX: 20%"/>

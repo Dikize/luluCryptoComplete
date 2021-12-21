@@ -44,11 +44,11 @@ export default function HomePage() {
             <Grid container className='container-cheemsking'>
                 <Grid item xs={12}>
                     <h1 className="text-center mt-5">
-                        <img src={name} alt="" className="bounce-in-fwd"/>
+                        <img src={name} alt="" style={{width: '80%'}} className="bounce-in-fwd"/>
                     </h1>
                 </Grid>
                 <Grid container className="my-5" alignItems="center">
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <div className="card mx-auto">
                             <div className="h1">Hello sir...</div>
                             <p className="px-2">
@@ -67,7 +67,7 @@ export default function HomePage() {
                             </IconsContainer>
                         </div>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <h1 className="text-center">
                             <img src={minicheems} className="rotate-in-diag-1" style={{height: '568px'}} alt=""/>
                         </h1>
@@ -75,19 +75,19 @@ export default function HomePage() {
                 </Grid>
 
                 <Grid container id="Tokenomics" className="mb-5" alignItems="center">
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <h1 className="text-center">
                             <img className="swirl-in-fwd" src={logo} style={{height: '568px'}} alt=""/>
                         </h1>
                     </Grid>
 
-                    <Grid item xs={5}>
+                    <Grid item xs={12} md={5}>
                         <DataTable />
                     </Grid>
                 </Grid>
 
                 <Grid container item className="pb-2" xs={12}>
-                    <Grid item className="pb-2 border mx-auto" xs={6}>
+                    <Grid item className="pb-2 border mx-auto" xs={12} md={6}>
                         <h1 className="text-center my-auto">Video</h1>
                     </Grid>
                 </Grid>
