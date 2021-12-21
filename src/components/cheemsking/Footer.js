@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
         width: '7.5rem',    
     },
     containerFooter: {
+        background: 'rgba(255, 255, 255, 0.15)',
+        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        backdropFilter: 'blur(8.5px)',
         [theme.breakpoints.down('xs')]: {
             // rowGap: '40px',
             flexDirection: 'column-reverse'
@@ -32,6 +35,10 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     iconFooter: {
+        transition: 'all 1s',
+        '&:hover': {
+            transform: 'translateY(-20px)',
+        },
         [theme.breakpoints.down('xs')]: {
             margin: "26px auto"
         },
@@ -46,8 +53,6 @@ const useStyles = makeStyles((theme) => ({
         textAlign: '-webkit-right',
         width: '55px',
         height: '55px',
-
-        
     }
 }));
 

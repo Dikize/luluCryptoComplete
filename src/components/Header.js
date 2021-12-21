@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { AppBar, Button, MenuItem, Menu, Toolbar, Typography, Box, IconButton } from "@material-ui/core";
+import { AppBar, MenuItem, Menu, Toolbar, Typography, Box, IconButton } from "@material-ui/core";
 import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
 // import  MenuIcon  from "@material-ui/icons/Menu";
 import MenuIcon from '@material-ui/icons/Menu'
@@ -28,7 +28,23 @@ const useStyles = makeStyles((theme) => ({
   link: { 
     color: '#fff',
     fontSize: 'large',
-    margin:'0 10px'
+    margin:'0 10px',
+    textDecoration: 'none',
+    textTransform: 'uppercase',
+    transition: '2s',
+
+    '&::after': {
+      content: '""',
+      display: 'block',
+      margin: '0 auto',
+      width: '0%',
+      height: '2px',
+      background: '#f1f1f1',
+      transition: 'width 0.8s ease-in-out',
+    },
+    '&:hover::after': {
+      width: '100%'
+    }
   }
 }));
 
@@ -130,24 +146,17 @@ function Header() {
           </Box>
           <Box className="me-auto" sx={{ flexGrow: 1, justifyContent: 'right', paddingRight:'10px', display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+              <MenuItem
                 key={page}
                 conponent={Link}
                 to={page.link}
                 onClick={handleCloseNavMenu}
+                // className={classes.btnNavbar}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 <a className={classes.link} href={page.link}>{page.name}</a>
-              </Button>
+              </MenuItem>
             ))}
-              <Button
-                conponent={Link}
-                to='/pageGetCoins'
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                Crypto info
-              </Button>
           </Box>
         </Toolbar>
       </AppBar>
