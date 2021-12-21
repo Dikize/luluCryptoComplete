@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     width: '83%',
     height: '110px',
+    [theme.breakpoints.down('xs')]: {
+      height: "56px"
+    },
   },
   link: { 
     color: '#fff',

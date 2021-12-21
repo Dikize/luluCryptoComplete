@@ -17,12 +17,12 @@ const useStyles = makeStyles((theme) => ({
     },
     containerFooter: {
         [theme.breakpoints.down('xs')]: {
-            rowGap: '40px',
+            // rowGap: '40px',
             flexDirection: 'column-reverse'
         },
         [theme.breakpoints.down('sm')]: {
-            rowGap: '40px',
-            paddingTop: '35px'
+            // rowGap: '40px',
+            marginTop: '35px'
         },
     },
     logoFooter: {
@@ -30,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
             display: 'flex',
             justifyContent: 'center',
         }
+    },
+    iconFooter: {
+        [theme.breakpoints.down('xs')]: {
+            margin: "26px auto"
+        },
     },
     listItemText: {
         textAlign: "center",
@@ -53,29 +58,29 @@ export default function Footer() {
     return (
         <Grid container className={classes.containerFooter} alignItems="center" justifyContent="space-between">
             <Grid item xs={12} sm={12} md={3} className={classes.logoFooter}><img className="bounce-in-fwd" src={logo} style={{height: '315px'}} alt=""/></Grid>
-            <Grid container item xs={12} sm={6} md={2} justifyContent="center">
-                <IconFooter color={TelegramBackground} style={{height: '55px', width: '55px'}} className={classes.icon}>
+            <Grid container item xs={12} sm={6} md={2} justifyContent="center" className={classes.iconFooter}>
+                <IconFooter color={TelegramBackground} style={{height: '55px', width: '55px'}}>
                     <a className="text-white" href="https://t.me/#">
                         <FaTelegram />
                     </a>
                 </IconFooter>
             </Grid>
-            <Grid container item xs={12} sm={6} md={2} justifyContent="center">
-                <IconFooter color={TwitterBackground} className={classes.icon}>
+            <Grid container item xs={12} sm={6} md={2} justifyContent="center" className={classes.iconFooter}>
+                <IconFooter color={TwitterBackground}>
                     <a className="text-white" href="https://twitter.com/Cheems_King">
                         <FaTwitter />
                     </a>
                 </IconFooter>
             </Grid>
-            <Grid container item xs={12} sm={6} md={2} justifyContent="center">
-                <IconFooter color={TwitterBackground} className={classes.icon}>
+            <Grid container item xs={12} sm={6} md={2} justifyContent="center" className={classes.iconFooter}>
+                <IconFooter color={TwitterBackground}>
                     <a className="text-white" href="https://poocoin.app/tokens/0x000">
                         <FcComboChart />
                     </a>
                 </IconFooter>
             </Grid>
-            <Grid container item xs={12} sm={6} md={3} justifyContent="center">
-                <IconFooter className={classes.icon}>
+            <Grid container item xs={12} sm={6} md={3} justifyContent="center" className={classes.iconFooter}>
+                <IconFooter>
                     <a className="text-white" href="https://pancakeswap.finance/swap?outputCurrency=0x000">
                         <img src={buyButton} alt=""/>
                     </a>

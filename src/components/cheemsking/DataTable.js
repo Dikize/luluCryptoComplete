@@ -18,13 +18,18 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         transition: 'all 1s',
         '&:hover': {
-            transform: 'translateY(-20px)'
-        },
-        [theme.breakpoints.down('xs')]: {
-            width: '100%'
+            transform: 'translateY(-20px)',
         },
         [theme.breakpoints.down('sm')]: {
-            width: '90%'
+            width: '90%',
+
+            '&:hover': {
+                transform: 'translateY(-20px)',
+                marginTop: '23px'
+            },
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '95%'
         },
     },
     cardTableItemContainer: {
