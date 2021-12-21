@@ -28,7 +28,7 @@
 .parallax {
     width: 100%;
     height: 300px;
-    background: url(./../assets/background2.jpg);
+    background: url(./background2.jpg);
     background-position: center;
     background-attachment: fixed;
     display: flex;
@@ -52,18 +52,6 @@
         width: 80% !important;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ################################### */
