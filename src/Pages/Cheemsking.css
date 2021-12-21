@@ -9,7 +9,7 @@
 }
 
 .container-firstContainer {
-    background-image: url("../assets/backGround.jpg");
+    background-image: url("./../assets/backGround.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@
 .container-firstContainer {
     width: 100%;
     padding-top: 23px;
-    background-image: url("../assets/background3.jpg");
+    background-image: url("./../assets/background3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
 .parallax {
     width: 100%;
     height: 300px;
-    background: url(../assets/background2.jpg);
+    background: url(./../assets/background2.jpg);
     background-position: center;
     background-attachment: fixed;
     display: flex;
