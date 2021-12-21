@@ -6,6 +6,7 @@ import logo from "../../assets/Asset1.svg"
 import buyButton from "../../assets/buy-button.png"
 import { FaTwitter, FaTelegram } from "react-icons/fa";
 import { FcComboChart } from "react-icons/fc";
+import styles from './../../Cheemsking.module.css'
 
 const TelegramBackground = "#16BFFD";
 const TwitterBackground = "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
@@ -62,7 +63,7 @@ export default function Footer() {
 
     return (
         <Grid container className={classes.containerFooter} alignItems="center" justifyContent="space-between">
-            <Grid item xs={12} sm={12} md={3} className={classes.logoFooter}><img className="bounce-in-fwd" src={logo} style={{height: '315px'}} alt=""/></Grid>
+            <Grid item xs={12} sm={12} md={3} className={classes.logoFooter}><img className={styles.bounceinfwd} src={logo} style={{height: '315px'}} alt=""/></Grid>
             <Grid container item xs={12} sm={6} md={2} justifyContent="center" className={classes.iconFooter}>
                 <IconFooter color={TelegramBackground} style={{height: '55px', width: '55px'}}>
                     <a className="text-white" href="https://t.me/#">
