@@ -72,11 +72,11 @@ export default function HomePage() {
 
     return (
         <ThemeProvider theme={cheemskingTheme}>
-            <Grid container className='container-cheemsking'>
+            <Grid container className={styles.containercheemsking}>
                 <div className={styles.containerFirstContainer}>
                     <Grid item xs={12}>
                         <h1 className="text-center mt-5">
-                            <img src={name} alt="" style={{width: '80%'}} className="bounce-in-fwd"/>
+                            <img src={name} alt="" style={{width: '80%'}} className={styles.bounceinfwd}/>
                         </h1>
                     </Grid>
                     <Grid container className="my-5" alignItems="center">
@@ -101,7 +101,7 @@ export default function HomePage() {
                         </Grid>
                         <Grid item xs={12} md={6} className={classes.minicheems}>
                             <h1>
-                                <img src={minicheems} className="slide-top w-100" style={{height: '568px'}} alt=""/>
+                                <img src={minicheems} className={styles.slidetop} style={{height: '568px'}} alt=""/>
                             </h1>
                         </Grid>
                     </Grid>
