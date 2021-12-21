@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         color: '#ffffff',
         textTransform: 'uppercase',
         letterSpacing: '0.4rem',
-        width: '50%',
+        width: '100%',
         transition: 'all 1s',
         '&:hover': {
             transform: 'translateY(-20px)'
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
             width: '100%'
         },
         [theme.breakpoints.down('sm')]: {
-            width: '80%'
+            width: '90%'
         },
     },
     cardTableItemContainer: {
@@ -66,7 +66,7 @@ export default function DataTable() {
             <Grid container item xs={12} md={6} className={classes.cardTableItemContainer}>
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem >
-                        <h4>BUY TAX: 15%</h4>
+                        <h4 className="text-decoration-underline">BUY TAX: 15%</h4>
                     </ListItem>
                     <Grid item xs={12}>
                         <ListItem >
@@ -108,7 +108,7 @@ export default function DataTable() {
             <Grid container item xs={12} md={6} className={classes.cardTableItemContainer}>
                 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                     <ListItem >
-                        <ListItemText className={classes.listItemText} primary="SELL TAX: 20%"/>
+                        <h4 className="text-decoration-underline">SELL TAX: 20%</h4>
                     </ListItem>
 
                     <ListItem >

@@ -19,8 +19,20 @@ const useStyles = makeStyles((theme) => ({
         // fontWeight: "bold",
         // cursor: "pointer",
     },
-    iconContainer: {
+    Tokenomics: {
+        marginBottom: '3rem',
+        justifyContent: 'space-evenly',
+        // [theme.breakpoints.down('sm')]: {
+        //     flexDirection: 'column-reverse',
+        // },
+    },
+    minicheems: {
+        textAlign: "center",
+        width: "100%",
 
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '134px',
+        },
     }
 }));
 
@@ -67,17 +79,17 @@ export default function HomePage() {
                             </IconsContainer>
                         </div>
                     </Grid>
-                    <Grid item xs={12} md={6}>
-                        <h1 className="text-center">
-                            <img src={minicheems} className="rotate-in-diag-1" style={{height: '568px'}} alt=""/>
+                    <Grid item xs={12} md={6} className={classes.minicheems}>
+                        <h1>
+                            <img src={minicheems} className="slide-top w-100" style={{height: '568px'}} alt=""/>
                         </h1>
                     </Grid>
                 </Grid>
 
-                <Grid container id="Tokenomics" className="mb-5" alignItems="center">
+                <Grid container id="Tokenomics" className={classes.Tokenomics} alignItems="center">
                     <Grid item xs={12} md={6}>
-                        <h1 className="text-center">
-                            <img className="swirl-in-fwd" src={logo} style={{height: '568px'}} alt=""/>
+                        <h1 className="text-center w-100">
+                            <img className="scale-in-hor-center w-100" src={logo} style={{height: '568px'}} alt=""/>
                         </h1>
                     </Grid>
 
