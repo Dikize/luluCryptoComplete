@@ -6,7 +6,7 @@ import logo from "../../assets/Asset1.svg"
 import buyButton from "../../assets/buy-button.png"
 import { FaTwitter, FaTelegram } from "react-icons/fa";
 import { FcComboChart } from "react-icons/fc";
-import styles from './../../Cheemsking.module.css'
+import styles from './../../pages/Cheemsking.module.css'
 
 const TelegramBackground = "#16BFFD";
 const TwitterBackground = "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
