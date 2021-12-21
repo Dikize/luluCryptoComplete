@@ -9,7 +9,8 @@ import minicheems from "../assets/minicheems.png"
 import logo from "../assets/Asset1.svg"
 import DataTable from "../components/cheemsking/DataTable";
 import Footer from "../components/cheemsking/Footer";
-import styles from "./Cheemsking.css"
+
+import styles from './Cheemsking.css'
 
 const useStyles = makeStyles((theme) => ({
     cardHome: {
@@ -72,7 +73,7 @@ export default function HomePage() {
     return (
         <ThemeProvider theme={cheemskingTheme}>
             <Grid container className='container-cheemsking'>
-                <div className="container-firstContainer">
+                <div className={styles.containerFirstContainer}>
                     <Grid item xs={12}>
                         <h1 className="text-center mt-5">
                             <img src={name} alt="" style={{width: '80%'}} className="bounce-in-fwd"/>
@@ -111,7 +112,7 @@ export default function HomePage() {
                     </p>
                     <span>A quality team that ensures the expansion of your wallet</span>
                 </div>
-                <div className="container-secondContainer">
+                <div className={styles.containerSecondContainer}>
 
                     <Grid container id="Tokenomics" className={classes.Tokenomics} alignItems="center">
                         <Grid item xs={12} md={6}>
