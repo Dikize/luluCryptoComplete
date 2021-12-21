@@ -3,14 +3,14 @@ import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles
 import { Grid } from "@material-ui/core";
 import Icon from "../components/cheemsking/Icon";
 import { FaTelegram, FaTwitter } from "react-icons/fa";
-import './Cheemsking.css'
+import './Cheemsking.module.css'
 import name from "../assets/name.png"
 import minicheems from "../assets/minicheems.png"
 import logo from "../assets/Asset1.svg"
 import DataTable from "../components/cheemsking/DataTable";
 import Footer from "../components/cheemsking/Footer";
 
-import styles from './Cheemsking.css'
+import styles from './Cheemsking.module.css'
 
 const useStyles = makeStyles((theme) => ({
     cardHome: {
@@ -126,7 +126,7 @@ export default function HomePage() {
                         </Grid>
                     </Grid>
                     <Grid container item className="pb-2" xs={12}>
-                        <Grid item className="pb-2 border mx-auto" xs={12} md={6}>
+                        <Grid item className="pb-2 border mx-auto" style={{width: '50%', height: '330px'}} xs={12} md={6}>
                             <h1 className="text-center my-auto">Video</h1>
                         </Grid>
                     </Grid>
