@@ -8,14 +8,14 @@
     background-size: cover; */
 }
 
-.container-firstContainer {
+.containerFirstContainer {
     background-image: url("./../assets/backGround.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container-firstContainer {
+.container-secondContainer {
     width: 100%;
     padding-top: 23px;
     background-image: url("./../assets/background3.jpg");
